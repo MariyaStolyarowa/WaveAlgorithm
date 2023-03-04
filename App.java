@@ -5,17 +5,17 @@ public class App {
       // System.out.println(rawData(map));
       System.out.println(PrintMap.Print_Map(map));
       MyLogger.writeLog("Map created");
-      //Для HomeWork6:
-    //   int[] startPos = getPoint2D(1, 1);
-    //   WaveAlgorithm.Wave_Algorithm(map, startPos);
-    //   // System.out.println(rawData(map));
-    //   int[][] map1 = WaySearch.SearchWays(map);
-    //   // System.out.println(rawData(map1));
-    //   System.out.println(PrintMap.Print_Map(map1));
-    //   MyLogger.writeLog("Path created");
-    // }
-    // private static int[] getPoint2D(int x, int y) {
-    //   return new int[] { x, y };
+      
+      int[] startPos = getPoint2D(1, 1);
+      WaveAlgorithm.Wave_Algorithm(map, startPos);
+      // System.out.println(rawData(map));
+      int[][] map1 = WaySearch.SearchWays(map);
+      // System.out.println(rawData(map1));
+      System.out.println(PrintMap.Print_Map(map1));
+      MyLogger.writeLog("Path created");
+    }
+    private static int[] getPoint2D(int x, int y) {
+      return new int[] { x, y };
     
     }
     // Вспомогатальный метод для отладки - контроль содержимого массива:
